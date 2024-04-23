@@ -1,10 +1,10 @@
-algoritmo "Exercicio Função 02"
+algoritmo "Exercicio FunÃ§Ã£o 02"
 // Ex. 2:
-// Criar um procedimento para solicitar 5 números (armazenando em um vetor)
-// Criar uma função para obter a soma dos números
-// Criar uma função para obter o menor número
-// Criar uma função para obter o maior número
-// Criar uma função para obter a quantidade de números pares
+// Criar um procedimento para solicitar 5 nÃºmeros (armazenando em um vetor)
+// Criar uma funÃ§Ã£o para obter a soma dos nÃºmeros
+// Criar uma funÃ§Ã£o para obter o menor nÃºmero
+// Criar uma funÃ§Ã£o para obter o maior nÃºmero
+// Criar uma funÃ§Ã£o para obter a quantidade de nÃºmeros pares
 
 var
 numeros: vetor[0..4] de real
@@ -12,14 +12,27 @@ numeros: vetor[0..4] de real
 procedimento solcicitarNumeros()
 var:
 i: inteiro
+
 inicio
 para i de 0 ate 4 faca
-escreva("Digite o numero: ")
-leia(i)
+   escreva("Digite o numero: ")
+   leia(numros[i])
 fimpara
 fimprocedimento
 
+funcao obterSomaNumeros()
+var
+soma, i: real
+
+inicio
+para i de 0 ate 4 faca
+   retorne:= soma + numero[i]
+fimpara
+retorno resultado
+fimfuncao
+
 inicio
 solcicitarNumeros()
+escreval("A Soma Ã©: ", obterSomaNumeros())
 
 fimalgoritmo
