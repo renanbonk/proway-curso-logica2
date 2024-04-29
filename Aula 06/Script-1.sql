@@ -5,8 +5,8 @@
 -- 		cadastrando 3 cidades para estados diferentes
 -- consultar as cidades utilizando inner join
 
+drop database if exists Proway;
 
-drop database if exists proway;
 create database proway;
 use proway;
 
@@ -31,7 +31,23 @@ primary key (id)
 );
 
 insert into cidades (nome, id_estado) values
-("Blumenau", 1);
-]
+("Blumenau", 1),
+insert into cidades (nome, id_estado) values
+("Florianopolis",1),
+insert into cidades (nome, id_estado) values
+("Joinville",1),
+insert into cidades (nome, id_estado) values
+("Maringa",2),
+insert into cidades (nome, id_estado) values
+("Curitiba",2),
+insert into cidades (nome, id_estado) values
+("Cascavel",2),
+insert into cidades (nome, id_estado) values
+("Porto alegre",3),
+insert into cidades (nome, id_estado) values
+("Gramado",3),
+insert into cidades (nome, id_estado) values
+("Pelotas",3);
+
 select * from cidades
-inner join estados on (cidades.id_estado= estados.id)
+inner join estados on (cidades.id_estado = estados.id)
